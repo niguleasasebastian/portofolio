@@ -1,0 +1,198 @@
+/* General styles
+ * General styles
+ * General styles
+ * General styles
+ */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.96);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  height: 10vh;
+  position: fixed;
+  width: 100vw;
+  z-index: 3;
+  padding: 2rem 0;
+  background-color: black;
+  opacity: 0.7;
+}
+
+/* Navbar styles
+ * Navbar styles
+ * Navbar styles
+ * Navbar styles
+ */
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 20rem;
+  height: 100%;
+}
+
+.nav-list a:hover {
+  color: #f51720;
+}
+
+/* Hero section styles
+ * Hero section styles
+ * Hero section styles
+ * Hero section styles
+ */
+
+#hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.hero-text-box {
+  min-width: 70rem;
+  margin: 10rem 20rem 10rem 20rem;
+  height: 30rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-h1 {
+  color: #f8d210;
+  font-size: 6rem;
+}
+
+.test-p {
+  color: white;
+  font-size: 2rem;
+  width: 40%;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.social-box {
+  width: 30%;
+  height: 5rem;
+  text-align: center;
+}
+
+.mini-icon {
+  font-size: 6rem;
+  color: white;
+}
+
+.mini-icon:hover {
+  transition: 200ms linear;
+  color: #f51720;
+}
+
+.horizontal-line {
+  width: 60%;
+  border-bottom: 5px white solid;
+  align-self: center;
+}
+
+/* Projects section styles
+ * Projects section styles
+ * Projects section styles
+ * Projects section styles
+ */
+
+#projects {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 5rem;
+}
+
+.card {
+  width: 400px;
+  height: 400px;
+  transition: all 0.2s linear;
+  margin: 7rem 10rem;
+  position: relative;
+}
+
+.card1 {
+  background: url("art/todo-gif.gif") center center/cover;
+}
+
+.card2 {
+  background: url("art/hangman-gif.gif") center center/cover;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.card-text {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  font-size: 2.5rem;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  margin: 10rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Skills section styles
+ * Skills section styles
+ * Skills section styles
+ * Skills section styles
+ */
+
+/* Contact section styles
+ * Contact section styles
+ * Contact section styles
+ * Contact section styles
+ */
+
+#contact {
+  min-height: 60vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column;
+}
+
+/* Media queris styles
+ * Media queris styles
+ * Media queris styles
+ * Media queris styles
+ */
