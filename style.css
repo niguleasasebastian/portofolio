@@ -34,7 +34,7 @@ li {
 nav {
   height: 10vh;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   z-index: 3;
   padding: 2rem 0;
   background-color: black;
@@ -51,12 +51,11 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin: 0 20rem;
   height: 100%;
 }
 
 .nav-list a:hover {
-  color: #f51720;
+  color: rgb(248, 210, 16);
 }
 
 /* Hero section styles
@@ -97,9 +96,9 @@ nav {
 }
 
 .social-box {
+  display: flex;
   width: 30%;
-  height: 5rem;
-  text-align: center;
+  justify-content: space-around;
 }
 
 .mini-icon {
@@ -109,13 +108,27 @@ nav {
 
 .mini-icon:hover {
   transition: 200ms linear;
-  color: #f51720;
+  color: rgb(248, 210, 16);
 }
 
-.horizontal-line {
-  width: 60%;
-  border-bottom: 5px white solid;
-  align-self: center;
+.download-icon {
+  font-size: 4rem;
+  margin-right: 1rem;
+}
+
+.cv-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cv-box:hover {
+  cursor: pointer;
+  color: rgb(248, 210, 16);
+}
+
+.cv-text {
+  font-size: 1.5rem;
 }
 
 /* Projects section styles
@@ -128,6 +141,13 @@ nav {
   min-height: 100vh;
   display: flex;
   flex-flow: column;
+}
+
+.horizontal-line {
+  width: 60%;
+  border-bottom: 5px white solid;
+  margin-bottom: 5rem;
+  align-self: center;
 }
 
 .section-title {
@@ -158,14 +178,14 @@ nav {
 
 .card-text {
   position: absolute;
-  top: 120%;
+  top: 115%;
   left: 50%;
   font-size: 2.5rem;
   transform: translate(-50%, -50%);
 }
 
 .container {
-  margin: 10rem;
+  margin: 5rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -189,6 +209,18 @@ nav {
   justify-content: flex-start;
   align-items: center;
   flex-flow: column;
+}
+
+.contact-box {
+  margin: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40rem;
+}
+
+.email-icon {
+  font-size: 4rem;
 }
 
 /* Media queris styles
